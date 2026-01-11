@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img class="bg" src="images/background.jpg">
+            <div class="title">
+                <img id="logo" src="images/odin.png">
+                <p id="odin">ODIN</p>
+            </div>
+            <p id="credit">Photo by Halie West on Unsplash</p>
+        </div>
+        <div class="main">
+            <p>This is not a real online service!
+                    You know you need something like this in your life
+                    to help you realize your deepest dreams.</p>
+            <p>Sign up now to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+            <div class="formContainer">
+                <form id="signupform">
+                    <p>Let's do this!</p>
+                    <div class="inputContainer">
+                        <label for="firstname">First Name
+                            <input type="text" id="firstname" required>
+                        </label>
+                        <label for="lastname">Last Name
+                            <input type="text" id="lastname" required>
+                        </label>
+                        <label for="email">Email
+                            <input type="email" id="email" required>
+                        </label>
+                        <label for="phone">Phone Number
+                            <input type="tel" id="phone" required>
+                        </label>
+                        <label for="password">Password
+                            <input type="password" id="password" required>
+                        </label>
+                        <label for="confirmpw">Confirm Password
+                            <input type="password" id="confirmpw" required>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" form="signupform">Create Account</button>
+            <p class="login">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

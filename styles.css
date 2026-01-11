@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "norsebold";
+  src: url("fonts/Norsebold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.bg {
+    height: 100%;
+    width: 400px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 400px;
+    height: 100px;
+    top: 150px;
+}
+
+#logo {
+    height: 70px;
+}
+
+#odin {
+    font-family: "norsebold";
+    font-size: 60px;
+}
+
+#credit {
+    position: absolute;
+    color: white;
+    font-family: arial;
+    font-size: 10px;
+    top: 95%;
+    left: 10%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    font-weight: bold;
+    justify-content: center;
+    color: #303030;
+    position: relative;
+}
+
+.main > p:first-child {
+    margin-bottom: 0;
+}
+
+.main > p:nth-child(2) {
+    margin-top: 0;
+}
+
+.main p, .main button {
+    margin-left: 30px;
+}
+
+.formContainer {
+    margin: 0;
+    margin-top: 30px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 3px 3px 10px #E5E7EB;
+}
+
+.formContainer p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 500px;
+}
+
+input, label {
+    font-weight: normal;
+    font-size: 12px;
+    display: block;
+}
+
+input {
+    border: solid #E5E7EB 1px;
+    border-radius: 3px;
+    width: 200px;
+}
+
+input:focus {
+    border: solid blue 1px;
+    box-shadow: 1px 1px 10px #d4d4d4;
+    outline: 0;
+}
+
+input:invalid {
+    border: solid red;
+}
+
+button {
+    background-color: #596D48;
+    border: 0;
+    width: 150px;
+    color: white;
+    border: solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.login {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
